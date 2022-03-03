@@ -4,13 +4,68 @@
   box-sizing: border-box;
 }
 
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .container{
   width: 1200px;
   min-width: 600px;
   margin: auto;
 }
 
+/* Stefano ha detto di non mettere margin-top all'header */
 header div.heading{
+  height: 70px;
+  background-color: #e579e6;
+}
+
+main section.first-section div.jumbotron{
+  height: 350px;
+  margin: 20px 0;
+  background-color: #e1d67a;
+}
+
+main section.second-section{
+  background-color: #0087ff;
+}
+
+main section.second-section :nth-child(1n){
+  background-color: #abcfe7;
+  margin-bottom: 15px;
+}
+
+main section.second-section .col{
+  float: left;
+  height: 450px;
+}
+
+main section.second-section div.line-top{
   height: 50px;
-  background-color: red;
+}
+
+main section.second-section aside.col{
+  width: 19%;
+}
+
+main section.second-section aside.col-left{
+  margin-right: 1%;
+}
+
+main section.second-section aside.col-right{
+  margin-left: 1%;
+}
+
+main section.second-section div.col-center{
+  width: 60%;
+}
+
+
+footer div.line-bottom{
+  height: 36px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background-color: #8801fe;
 }
