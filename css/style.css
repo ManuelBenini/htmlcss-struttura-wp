@@ -5,5 +5,12 @@
 }
 
 .container{
-  
+  width: 1200px;
+  min-width: 600px;
+  margin: auto;
+}
+
+header div.heading{
+  height: 50px;
+  background-color: red;
 }
